@@ -1,73 +1,66 @@
-# todo
-Online todo application using Ajax with Laravel 10
----------------------------------------------------------------
-Project Title: Online Todo Application
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-Project Description:
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-User Registration and Login:
-	Users can sign up using their name, phone number, email address and password to create a new account.
-	While login, user have to provide email and password.
-	Upon successful login, users are granted access to their personalized todo management interface.
+## About Laravel
 
-Todo Management:
-	Users can create, view, edit, and delete their own todos.
-	Each todo consists of a title and description.
-	Todos can be organized and prioritized according to the user's preferences.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-User Interface:
-	The application provides a user-friendly interface with intuitive navigation and clear design.
-	The index page presents an overview of todos and provides easy access to various features.
-	Users can easily search and sort todos based on title and description to find specific tasks.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Collaborative Features:
-	Users have the option to view todos created by other users.
-	Todos created by other users are displayed alongside the username of the creator.
-	Collaboration features allow users to view a broader range of tasks and foster collaboration.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Security and Data Protection:
-	User passwords are securely hashed and stored in the database to ensure data protection.
-	Proper authentication and authorization mechanisms are implemented to prevent unauthorized access.
-	The application follows best practices for data privacy and protection.
------------------------------------------------------------------------------------------------------------------------------------------
+## Learning Laravel
 
-Validations:
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-'name' Validation:
-	The 'name' field is required and must consist of alphabetic characters and spaces.
-	It should be between 3 and 50 characters long.
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-'phone' Validation:
-	The 'phone' field is required and must follow the Indian phone number format.
-	It should start with a digit from 6 to 9 and be exactly 10 digits long.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-'email' Validation:
-	The 'email' field is required and must be a valid email address.
-	It should match the regular expression pattern for standard email format.
+## Laravel Sponsors
 
-'password' and 'confirm password' Validations:
-	The 'password' field is required and must follow a specific pattern for strong passwords.
-	It should have at least 8 characters and contain at least one lowercase letter, one uppercase letter, one digit, and one special character.
-	The 'confirm password' field is required and must match the 'password' field value for password confirmation.
-----------------------------------------------------------------------------------------------------------------------------------------
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-Deployment Configuration:
+### Premium Partners
 
-The application is designed to run on localhost with the port number set to 1234.
-To ensure a successful connection to the MySQL database, please place the project folder inside the 'htdocs' folder of your server.
-To access the application, Browse "localhost:1234" in web-browser.
-----------------------------------------------------------------------------------------------------------------------------------------
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-Sample Database:
+## Contributing
 
-Attached with the project, you will find a sample MySQL database file (tododb.sql).
-This database file includes two sample user accounts and some pre-populated todos for testing purposes.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-The sample user accounts have the following credentials:
-User 1:
-	Email: user.one@test.com
-	Password: Test@1234
-User 2:
-	Email: user.two@test.com
-	Password: Test@1234
------------------------------------------------------------------------------------------------------------------------------------------
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
