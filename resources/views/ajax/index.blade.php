@@ -22,7 +22,7 @@
           //console.log('Data :'+data);
           if (status == "success") {
             //console.log(data);
-            //we will start a timer which will show the loader image to the client.
+            //we will start a timer which will show the loader image to the client
             $("#result").html(`
               <h4><img src='{{asset('./images/Ajax-loader.gif')}}' height='64px' width='64px'/>Please wait ..</h4>
                               `);
